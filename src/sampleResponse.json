@@ -1,0 +1,445 @@
+{
+  "edges": [
+      {
+          "id": "eui-quicklaunch-asr-worker-quicklaunch-asr",
+          "source": "ui-quicklaunch-asr",
+          "target": "worker-quicklaunch-asr"
+      },
+      {
+          "id": "enext-gen-ui-quicklaunch-asr-worker-quicklaunch-asr",
+          "source": "next-gen-ui-quicklaunch-asr",
+          "target": "worker-quicklaunch-asr"
+      },
+      {
+          "id": "elwd-quicklaunch-asr-worker-quicklaunch-asr",
+          "source": "lwd-quicklaunch-asr",
+          "target": "worker-quicklaunch-asr"
+      },
+      {
+          "id": "eccmngui-quicklaunch-asr-worker-quicklaunch-asr",
+          "source": "ccmngui-quicklaunch-asr",
+          "target": "worker-quicklaunch-asr"
+      },
+      {
+          "id": "eworker-quicklaunch-asr-faktory-quicklaunch-asr",
+          "source": "worker-quicklaunch-asr",
+          "target": "faktory-quicklaunch-asr"
+      },
+      {
+          "id": "eworker-quicklaunch-asr-postgres-quicklaunch-asr",
+          "source": "worker-quicklaunch-asr",
+          "target": "postgres-quicklaunch-asr"
+      },
+      {
+          "id": "eworker-quicklaunch-asr-redis-deployment-quicklaunch-asr",
+          "source": "worker-quicklaunch-asr",
+          "target": "redis-deployment-quicklaunch-asr"
+      }
+  ],
+  "nodes": [
+      {
+          "id": "ui-quicklaunch-asr",
+          "rule": {
+              "metadata": {
+                  "name": "ui-quicklaunch-asr",
+                  "namespace": "quicklaunch",
+                  "creationTimestamp": null,
+                  "annotations": {
+                      "harness.io/cloud-connector-id": "\u003creplace\u003e"
+                  }
+              },
+              "spec": {
+                  "ingress": {
+                      "name": "ui",
+                      "controllerName": "nginx"
+                  },
+                  "service": {
+                      "name": "ui",
+                      "port": 80
+                  },
+                  "idleTimeMins": 30,
+                  "hideProgressPage": false,
+                  "notifications": {
+                      "usergroups": null
+                  },
+                  "istio": null,
+                  "traefik": null,
+                  "ambassador": null,
+                  "enabled": null
+              },
+              "status": {
+                  "service_deployment": {
+                      "namespace": "",
+                      "name": "",
+                      "id": "",
+                      "selector": null,
+                      "min": 0,
+                      "desired": 0,
+                      "type": ""
+                  },
+                  "service_routing": {
+                      "service_address": "",
+                      "service_port": 0,
+                      "service_host": "",
+                      "service_path": "",
+                      "service_name": ""
+                  },
+                  "last_updated_at": "",
+                  "observed_generation": 0
+              }
+          },
+          "tier": 1
+      },
+      {
+          "id": "next-gen-ui-quicklaunch-asr",
+          "rule": {
+              "metadata": {
+                  "name": "next-gen-ui-quicklaunch-asr",
+                  "namespace": "quicklaunch",
+                  "creationTimestamp": null,
+                  "annotations": {
+                      "harness.io/cloud-connector-id": "\u003creplace\u003e"
+                  }
+              },
+              "spec": {
+                  "ingress": {
+                      "name": "next-gen-ui-ingress",
+                      "controllerName": "nginx"
+                  },
+                  "service": {
+                      "name": "next-gen-ui",
+                      "port": 80
+                  },
+                  "idleTimeMins": 30,
+                  "hideProgressPage": false,
+                  "notifications": {
+                      "usergroups": null
+                  },
+                  "istio": null,
+                  "traefik": null,
+                  "ambassador": null,
+                  "enabled": null
+              },
+              "status": {
+                  "service_deployment": {
+                      "namespace": "",
+                      "name": "",
+                      "id": "",
+                      "selector": null,
+                      "min": 0,
+                      "desired": 0,
+                      "type": ""
+                  },
+                  "service_routing": {
+                      "service_address": "",
+                      "service_port": 0,
+                      "service_host": "",
+                      "service_path": "",
+                      "service_name": ""
+                  },
+                  "last_updated_at": "",
+                  "observed_generation": 0
+              }
+          },
+          "tier": 1
+      },
+      {
+          "id": "lwd-quicklaunch-asr",
+          "rule": {
+              "metadata": {
+                  "name": "lwd-quicklaunch-asr",
+                  "namespace": "quicklaunch",
+                  "creationTimestamp": null,
+                  "annotations": {
+                      "harness.io/cloud-connector-id": "\u003creplace\u003e"
+                  }
+              },
+              "spec": {
+                  "ingress": {
+                      "name": "lwd-ingress",
+                      "controllerName": "nginx"
+                  },
+                  "service": {
+                      "name": "lwd",
+                      "port": 9090
+                  },
+                  "idleTimeMins": 30,
+                  "hideProgressPage": false,
+                  "notifications": {
+                      "usergroups": null
+                  },
+                  "istio": null,
+                  "traefik": null,
+                  "ambassador": null,
+                  "enabled": null
+              },
+              "status": {
+                  "service_deployment": {
+                      "namespace": "",
+                      "name": "",
+                      "id": "",
+                      "selector": null,
+                      "min": 0,
+                      "desired": 0,
+                      "type": ""
+                  },
+                  "service_routing": {
+                      "service_address": "",
+                      "service_port": 0,
+                      "service_host": "",
+                      "service_path": "",
+                      "service_name": ""
+                  },
+                  "last_updated_at": "",
+                  "observed_generation": 0
+              }
+          },
+          "tier": 1
+      },
+      {
+          "id": "ccmngui-quicklaunch-asr",
+          "rule": {
+              "metadata": {
+                  "name": "ccmngui-quicklaunch-asr",
+                  "namespace": "quicklaunch",
+                  "creationTimestamp": null,
+                  "annotations": {
+                      "harness.io/cloud-connector-id": "\u003creplace\u003e"
+                  }
+              },
+              "spec": {
+                  "ingress": {
+                      "name": "ccmngui",
+                      "controllerName": "nginx"
+                  },
+                  "service": {
+                      "name": "ccmngui",
+                      "port": 8080
+                  },
+                  "idleTimeMins": 30,
+                  "hideProgressPage": false,
+                  "notifications": {
+                      "usergroups": null
+                  },
+                  "istio": null,
+                  "traefik": null,
+                  "ambassador": null,
+                  "enabled": null
+              },
+              "status": {
+                  "service_deployment": {
+                      "namespace": "",
+                      "name": "",
+                      "id": "",
+                      "selector": null,
+                      "min": 0,
+                      "desired": 0,
+                      "type": ""
+                  },
+                  "service_routing": {
+                      "service_address": "",
+                      "service_port": 0,
+                      "service_host": "",
+                      "service_path": "",
+                      "service_name": ""
+                  },
+                  "last_updated_at": "",
+                  "observed_generation": 0
+              }
+          },
+          "tier": 1
+      },
+      {
+          "id": "worker-quicklaunch-asr",
+          "rule": {
+              "metadata": {
+                  "name": "worker-quicklaunch-asr",
+                  "namespace": "quicklaunch",
+                  "creationTimestamp": null,
+                  "annotations": {
+                      "harness.io/cloud-connector-id": "\u003creplace\u003e"
+                  }
+              },
+              "spec": {
+                  "ingress": null,
+                  "idleTimeMins": 30,
+                  "hideProgressPage": false,
+                  "workloadName": "worker",
+                  "workloadType": "Deployment",
+                  "notifications": {
+                      "usergroups": null
+                  },
+                  "istio": null,
+                  "traefik": null,
+                  "ambassador": null,
+                  "enabled": null
+              },
+              "status": {
+                  "service_deployment": {
+                      "namespace": "",
+                      "name": "",
+                      "id": "",
+                      "selector": null,
+                      "min": 0,
+                      "desired": 0,
+                      "type": ""
+                  },
+                  "service_routing": {
+                      "service_address": "",
+                      "service_port": 0,
+                      "service_host": "",
+                      "service_path": "",
+                      "service_name": ""
+                  },
+                  "last_updated_at": "",
+                  "observed_generation": 0
+              }
+          },
+          "tier": 2
+      },
+      {
+          "id": "faktory-quicklaunch-asr",
+          "rule": {
+              "metadata": {
+                  "name": "faktory-quicklaunch-asr",
+                  "namespace": "quicklaunch",
+                  "creationTimestamp": null,
+                  "annotations": {
+                      "harness.io/cloud-connector-id": "\u003creplace\u003e"
+                  }
+              },
+              "spec": {
+                  "ingress": null,
+                  "idleTimeMins": 30,
+                  "hideProgressPage": false,
+                  "workloadName": "faktory",
+                  "workloadType": "Deployment",
+                  "notifications": {
+                      "usergroups": null
+                  },
+                  "istio": null,
+                  "traefik": null,
+                  "ambassador": null,
+                  "enabled": null
+              },
+              "status": {
+                  "service_deployment": {
+                      "namespace": "",
+                      "name": "",
+                      "id": "",
+                      "selector": null,
+                      "min": 0,
+                      "desired": 0,
+                      "type": ""
+                  },
+                  "service_routing": {
+                      "service_address": "",
+                      "service_port": 0,
+                      "service_host": "",
+                      "service_path": "",
+                      "service_name": ""
+                  },
+                  "last_updated_at": "",
+                  "observed_generation": 0
+              }
+          },
+          "tier": 3
+      },
+      {
+          "id": "postgres-quicklaunch-asr",
+          "rule": {
+              "metadata": {
+                  "name": "postgres-quicklaunch-asr",
+                  "namespace": "quicklaunch",
+                  "creationTimestamp": null,
+                  "annotations": {
+                      "harness.io/cloud-connector-id": "\u003creplace\u003e"
+                  }
+              },
+              "spec": {
+                  "ingress": null,
+                  "idleTimeMins": 30,
+                  "hideProgressPage": false,
+                  "workloadName": "postgres",
+                  "workloadType": "Deployment",
+                  "notifications": {
+                      "usergroups": null
+                  },
+                  "istio": null,
+                  "traefik": null,
+                  "ambassador": null,
+                  "enabled": null
+              },
+              "status": {
+                  "service_deployment": {
+                      "namespace": "",
+                      "name": "",
+                      "id": "",
+                      "selector": null,
+                      "min": 0,
+                      "desired": 0,
+                      "type": ""
+                  },
+                  "service_routing": {
+                      "service_address": "",
+                      "service_port": 0,
+                      "service_host": "",
+                      "service_path": "",
+                      "service_name": ""
+                  },
+                  "last_updated_at": "",
+                  "observed_generation": 0
+              }
+          },
+          "tier": 3
+      },
+      {
+          "id": "redis-deployment-quicklaunch-asr",
+          "rule": {
+              "metadata": {
+                  "name": "redis-deployment-quicklaunch-asr",
+                  "namespace": "quicklaunch",
+                  "creationTimestamp": null,
+                  "annotations": {
+                      "harness.io/cloud-connector-id": "\u003creplace\u003e"
+                  }
+              },
+              "spec": {
+                  "ingress": null,
+                  "idleTimeMins": 30,
+                  "hideProgressPage": false,
+                  "workloadName": "redis-deployment",
+                  "workloadType": "Deployment",
+                  "notifications": {
+                      "usergroups": null
+                  },
+                  "istio": null,
+                  "traefik": null,
+                  "ambassador": null,
+                  "enabled": null
+              },
+              "status": {
+                  "service_deployment": {
+                      "namespace": "",
+                      "name": "",
+                      "id": "",
+                      "selector": null,
+                      "min": 0,
+                      "desired": 0,
+                      "type": ""
+                  },
+                  "service_routing": {
+                      "service_address": "",
+                      "service_port": 0,
+                      "service_host": "",
+                      "service_path": "",
+                      "service_name": ""
+                  },
+                  "last_updated_at": "",
+                  "observed_generation": 0
+              }
+          },
+          "tier": 3
+      }
+  ]
+}
